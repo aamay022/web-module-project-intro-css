@@ -19,7 +19,7 @@ font: inherit;
 vertical-align: baseline;
 font-family: 'Roboto Mono';
 box-sizing: border-box;
-/* border: 1px solid red; */
+width:100%;
 }
 :focus {
 	outline: 0;
@@ -49,17 +49,36 @@ blockquote, q {
 	quotes: "" "";
 	}
 
+html{
+    font-size: 62.5%;
+}
+
+body{
+    line-height:1.5;
+}
+
+h1{
+    font-family: 'Chelsea Market';
+    font-size: 30px;
+    text-align:center;
+}
+h2{
+    text-align:center;
+    font-weight:bold;
+    font-size:150%;
+    padding: 2%
+}
 .container{
-    width: 600px;
-    margin: 0 auto;
+    width:600px;
     display:flex;
+    margin: 0 auto;
     flex-direction:column;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15)
-    }
+    box-shadow:  1px 1px rgba(0,0,0,0.15)
+}
 
 nav{
     text-align:center; 
-    padding: 30px;
+    padding: 20px;
 }
 
 a{
@@ -72,10 +91,7 @@ a{
     padding:10px;
     text-decoration: none;
 }
-a:hover{
-    color: green;
-    text-transform:uppercase;
-}
+
 nav .plan {
     background:#FF764E;
 }
@@ -85,64 +101,26 @@ nav .learn{
 nav .involved{
     background: #FFCD69;
 }
-h1{
-    font-family: 'Chelsea Market';
-    font-size: 30px;
- }
-span{
-    font-weight:bold;
-}
-.rowOne img{
-    width:20%;
-    border-radius:50%;
-    margin: 25px;
-}
-.rowOne{
-    display:flex;
-}
-.rowOne p{
-    font-size: 10px;
-    margin:10px;
-    text-align: center
-}
 
-.rowOne p:last-child{
-    width: 60%;
-    margin: 0 auto;
-}
-.rowOne div{
-    margin: 15px;
-}
-.rowTwo{
+.secOne{
     text-align:center;
     background:#DDB9A3;
-    margin:15px
-}
-.rowTwo p{
-    font-size: 10px;
-    padding: 5px;
-    color:white;
-}
-.rowThree img{
-    width:60px;
-}
-.rowThree{
-    text-align:center;
     margin:0 auto;
 }
-
-.rowThree p{
-    font-size: 7px;
-    width:150px;
-    color:black;
+p{
+    padding:5%;
+    font-size:110%;
+}
+.secTwo{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: lightgreen;
+    }
+section{
+    display:flex;
 }
 
-footer img{
-width: 100%;
-object-fit: cover;
-max-height:150px
-}
-
-footer {
-    background:#F9E7DC;
+li{
+    padding:5px;
 }
